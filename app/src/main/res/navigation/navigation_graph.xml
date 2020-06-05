@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.duckinfotech.stikerdemo.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_stickerPackDetailsFragment"
+            app:destination="@id/stickerPackDetailsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_stickerPackListFragment"
+            app:destination="@id/stickerPackListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stickerPackDetailsFragment"
+        android:name="com.duckinfotech.stikerdemo.StickerPackDetailsFragment"
+        android:label="StickerPackDetailsFragment"
+        tools:layout="@layout/fragment_sticker_pack_details">
+        <argument
+            android:name="identifier"
+            app:argType="string" />
+        <argument
+            android:name="catId"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/stickerPackListFragment"
+        android:name="com.duckinfotech.stikerdemo.StickerPackListFragment"
+        android:label="StickerPackListFragment"
+        tools:layout="@layout/fragment_sticker_pack_list">
+        <argument
+            android:name="searchTerm"
+            android:defaultValue="New"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_stickerPackListFragment_to_stickerPackDetailsFragment"
+            app:destination="@id/stickerPackDetailsFragment" />
+    </fragment>
+</navigation>

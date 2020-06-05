@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<resources>
+
+    <dimen name="min_touch_target_size">48dp</dimen>
+    <dimen name="min_icon_target_padding">12dp</dimen>
+
+    <!--BottomAppBar-->
+    <dimen name="bottom_app_bar_height">56dp</dimen>
+    <dimen name="bottom_app_bar_fab_cradle_corner_radius">32dp</dimen>
+    <dimen name="bottom_app_bar_fab_cradle_margin">8dp</dimen>
+    <dimen name="bottom_app_bar_logo_size">32dp</dimen>
+
+
+    <dimen name="chip_icon_diameter">32dp</dimen>
+
+    <dimen name="sticker_pack_list_item_preview_image_size">50dp</dimen>
+    <dimen name="sticker_pack_list_item_preview_image_padding">4dp</dimen>
+    <dimen name="sticker_pack_list_item_row_dot_horizontal_padding">4dp</dimen>
+</resources>

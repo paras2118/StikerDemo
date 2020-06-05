@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Shape -->
+    <!-- https://material.io/develop/android/theming/shape/ -->
+
+    <!-- button, chip, fab, text field -->
+    <style name="ShapeAppearance.Sticker.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/sticker_small_component_corner_radius</item>
+    </style>
+
+    <!-- card, dialog -->
+    <style name="ShapeAppearance.Sticker.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/sticker_medium_component_corner_radius</item>
+    </style>
+
+    <!-- nav drawer(side), nav drawer(bottom) -->
+    <style name="ShapeAppearance.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/sticker_large_component_corner_radius</item>
+    </style>
+
+    <!-- shapeAppearanceOverlay medium -->
+    <style name="ShapeAppearanceOverlay.Sticker.MediumComponent.Marked" parent="">
+        <item name="cornerSizeTopLeft">@dimen/sticker_small_component_corner_radius</item>
+    </style>
+
+
+    <!-- Dimension -->
+    <dimen name="sticker_small_component_corner_radius">24dp</dimen>
+    <dimen name="sticker_medium_component_corner_radius">0dp</dimen>
+    <dimen name="sticker_large_component_corner_radius">12dp</dimen>
+
+</resources>
